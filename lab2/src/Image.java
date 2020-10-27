@@ -1,12 +1,19 @@
-public class Image implements Element{
-    private String name;
+import java.util.concurrent.TimeUnit;
 
-    Image(String name){
-        this.name=name;
+public class Image implements Element{
+    private String imagename;
+
+    Image(String imageName) {
+        imageName = imagename;
+        try {
+            TimeUnit.SECONDS.sleep(5);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public void print(){
-        System.out.println("Image with name: "+this.name);
+        System.out.println("Image with name: "+this.imagename);
     }
 
 }
