@@ -1,3 +1,5 @@
+package lab5;
+
 public class Main {
     public static void main(String[] args) throws Exception {
         Section cap1 = new Section("Capitolul 1");
@@ -20,6 +22,5 @@ public class Main {
         System.out.println("Printing with Alignment");
         System.out.println();
         cap1.print();
-
     }
 }
